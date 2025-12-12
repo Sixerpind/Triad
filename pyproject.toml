@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "triad"
+version = "0.1.0"
+description = "Triad: small educational trichain implementation in Python"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+  {name = "Triad Maintainer", email = "triad@example.com"}
+]
+dependencies = []
+
+[project.scripts]
+triad = "triad.__main__:main"
