@@ -12,9 +12,9 @@ def main(argv=None):
 
     sub.add_parser("status", help="Print basic chain status")
     add_tx = sub.add_parser("tx", help="Create a transaction")
-    add_tx.add_argument("--from", dest="sender", required=True)
-    add_tx.add_argument("--to", dest="receiver", required=True)
-    add_tx.add_argument("--amount", dest="amount", type=float, required=True)
+    add_tx.add_argument(--from, dest="sender", required=True)
+    add_tx.add_argument(--to, dest="receiver", required=True)
+    add_tx.add_argument(--amount, dest="amount", type=float, required=True)
 
     sub.add_parser("micro", help="Create a micro block via consensus")
     sub.add_parser("pow", help="Create a proof-of-work checkpoint")

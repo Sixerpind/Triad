@@ -1,4 +1,3 @@
-```markdown
 # Triad (Trichain) — Python Implementation
 
 This repository contains a small, portable Python implementation of the TriChain (trichain) example:
@@ -25,4 +24,3 @@ Packaging:
 - A pyproject.toml file is included — use build tools (pip, build) to build a wheel or sdist.
 
 This implementation targets cross-platform compatibility (macOS, Windows 10/11) and uses only Python standard library modules.
-```

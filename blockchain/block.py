@@ -37,7 +37,7 @@ class Block:
             "nonce": self.nonce,
             "pow_checkpoint": self.pow_checkpoint,
         }
-        payload_bytes = json.dumps(payload, sort_keys=True, separators=(",",":"), ensure_ascii=False).encode("utf-8")
+        payload_bytes = json.dumps(payload, sort_keys=True, separators=(",":":"), ensure_ascii=False).encode("utf-8")
         return hashlib.sha256(payload_bytes).hexdigest()
 
     def proof_of_work(self, difficulty: int = 4, max_attempts: int = 10_000_00) -> str:
